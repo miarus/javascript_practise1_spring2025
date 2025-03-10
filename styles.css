@@ -1,0 +1,78 @@
+body {
+    background-color: lightpink;
+    color: darkblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.form-container, .search-container, #tulos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 50%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    margin-top: 10px; /* Siirretään ylemmäs */
+}
+
+#tulos-container {
+    margin-top: 20px;
+    font-weight: bold;
+    color: darkred;
+    border: 1px solid darkred; /* Lisätty reunus */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin: 10px 0;
+    width: 100%;
+}
+
+select, input, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+button {
+    width: auto; /* Napin leveys mukautuu */
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+#tuloksetLista {
+    list-style-type: none; /* Poistaa normaalit listapallot */
+    padding: 0;
+}
+
+#tuloksetLista li {
+    background: #ffe6e6; /* Vaaleampi vaaleanpunainen */
+    color: #721c24; /* Tumma punainen teksti */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffb3b3;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    border: 2px solid red;
+    background-color: #ffcccc; /* Vaaleanpunainen virhetausta */
+    color: red; /* Virheteksti erottuu */
+}

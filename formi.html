@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporttikuri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sporttikuri</h1>
+    
+    <div class="form-container">    <!-- alasvetovalikko lajit -->
+        <label for="laji">Urheilulaji:</label>
+        <select id="laji">
+            <option value="">Valitse laji</option>
+            <option value="kävely">Kävely</option>
+            <option value="juoksu">Juoksu</option>
+            <option value="tanssi">Tanssi</option>
+            <option value="hiihto">Hiihto</option>
+            <option value="kuntosali">Kuntosali</option>
+            <option value="aerobic">Aerobic</option>
+            <option value="uinti">Uinti</option>
+            <option value="tennis">Tennis</option>
+        </select>
+
+        <div class="form-group">    <!-- aika lajiin -->
+            <label for="aika">Käytetty aika (h):</label>
+            <input type="number" id="aika" placeholder="Syötä aika (h)">
+        </div>
+
+        <div class="form-group">
+            <label for="paivamaara">Päivämäärä:</label>
+            <input type="date" id="paivamaara">
+        </div>
+
+        <div class="form-group">
+            <label for="kuvaus">Kuvaus:</label>
+            <textarea id="kuvaus"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button id="laheta">Lähetä</button>
+        </div>
+    </div>
+
+    <!-- Siirretty ylemmäs -->
+    <div class="search-container">
+        <h2>Etsi lajin yhteenveto</h2>
+        <label for="etsiLaji">Etsi laji:</label>
+        <select id="etsiLaji">
+            <option value="">Valitse laji</option>
+            <option value="kävely">Kävely</option>
+            <option value="juoksu">Juoksu</option>
+            <option value="tanssi">Tanssi</option>
+            <option value="hiihto">Hiihto</option>
+            <option value="kuntosali">Kuntosali</option>
+            <option value="aerobic">Aerobic</option>
+            <option value="uinti">Uinti</option>
+            <option value="tennis">Tennis</option>
+        </select>
+        <button id="hae">Hae</button>
+    </div>
+
+    <!-- Tämä näyttää haetun lajin yhteistunnit -->
+    <div id="tulos-container">
+        <h2>Yhteenveto</h2>
+        <p id="tulos">Valitse laji ja paina "Hae" nähdäksesi yhteenvedon.</p>
+        <ul id="tuloksetLista"></ul> <!-- Tähän tulostetaan treenirivit -->
+    </div>
+
+    <script src="formin skripti.js"></script>
+</body>
+</html>
